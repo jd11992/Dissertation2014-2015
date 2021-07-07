@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jon.fitnessped.statspage$PlaceholderFragment">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Steps:"
+        android:id="@+id/StepsView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Steps num"
+        android:id="@+id/StepView"
+        android:layout_alignBottom="@+id/StepsView"
+        android:layout_toRightOf="@+id/StepsView"
+        android:layout_toEndOf="@+id/StepsView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Distance:"
+        android:id="@+id/DistanceView1"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/StepsView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Distance"
+        android:id="@+id/DistanceView2"
+        android:layout_alignBottom="@+id/DistanceView1"
+        android:layout_toRightOf="@+id/DistanceView1"
+        android:layout_toEndOf="@+id/DistanceView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time:"
+        android:id="@+id/TimeView"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/DistanceView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Time"
+        android:id="@+id/TimeView2"
+        android:layout_alignBottom="@+id/TimeView"
+        android:layout_toRightOf="@+id/StepsView"
+        android:layout_toEndOf="@+id/StepsView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Data"
+        android:id="@+id/DataButton"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/TimeView"
+        android:layout_toRightOf="@+id/StepView"
+        android:layout_toEndOf="@+id/StepView" />
+
+</RelativeLayout>
